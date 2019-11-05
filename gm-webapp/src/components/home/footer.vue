@@ -1,19 +1,18 @@
 <template>
-        <div class="home_footer_bottom">
-            <div>首页</div>
-            <div>分类</div>
-            <div>优选</div>
-            <div>购物车</div>
-            <div>我的</div>
-        </div>
+    <home_footer :datafoot="datafoot"></home_footer>
 </template>
 
 <script>
+import list from './home-footer-small/list'
 export default {
   name: 'vfooter',
-  methods: {
+    components: {
+        'home_footer': list
+    },
+    props:['datafoot'],
+    methods: {
 
-  }
+    }
 }
 </script>
 

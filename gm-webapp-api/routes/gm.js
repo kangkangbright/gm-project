@@ -2,7 +2,7 @@
 const express = require("express")
 //创建一个路由对象
 const router = express.Router() //restful api
-const orderModel = require('../models/shopsInf')
+const orderModel = require('../models/homeInf')
 
 //创建一个restful 地址
 router.all("*",(req,res,next)=>{
